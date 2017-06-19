@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Formulario HTML</title>
+		<script>
+			function validarForm(){
+				var usuario = document.forms["formulario"]["usuario"].value;
+				var pass = document.forms["formulario"]["pass"].value;
+				if(usuario == "" || pass == "" || pass.length <= 6){
+					alert("Error!");
+					return false;
+				}else{
+					confirm("Correcto, ¿proceder con el registro?");
+					alert("Registrado!");
+				}
+				return true;
+			}
+		</script>
+	</head>
+	<body>
+		<form name="formulario" onsubmit="return validarForm()" method="post">
+			Usuario:<input type="text" name="usuario">
+			<br>
+			Contraseña:<input type="password" name="pass">
+			<br>
+			<input type="submit" value="Enviar">
+		</form>
+	</body>
+</html>

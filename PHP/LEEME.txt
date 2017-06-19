@@ -1,0 +1,5 @@
+Este ejercicio ha sido resuelto usando dos archivos porque me resultó dificil hacerlo con solo uno.
+
+La ejecución del ejercicio comienza en el archivo "formulario.php".
+
+Gracias por su comprensión y perdonen las molestias.
